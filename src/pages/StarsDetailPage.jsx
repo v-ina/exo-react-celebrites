@@ -12,6 +12,12 @@ function StarsDetailPage (){
         return starID == star.id
     })
 
+    // {starID} c'est ce que j'ai marque pour url. a App.js
+    // par exemple, si je clique 2eme element de tableau stars, 
+    // fonction useParams recuperera '2', et ca va devenir {starID}
+    // je cree un object(stardetail) qui contient les infos de 2eme element de tableau stars.
+    // et cet objet stardetail, je vais creer une article.
+
     return(
         <>
             <Header/>

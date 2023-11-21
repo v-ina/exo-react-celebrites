@@ -18,4 +18,7 @@ function App() {
   );
 }
 
+// je vais recuperer id de tableau stars, pour remplir le parametre d'url 
+// /:starID/ c'est parametre d'url, donc chaque stars[i].id va devenir un parametre
+
 export default App;

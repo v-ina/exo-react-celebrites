@@ -18,4 +18,7 @@ function EveryStarsPage (){
     )
 }
 
+// ici, je vais utiliser mon fonction qui va creer CelebrityCard, mais en remplissant
+// star(chaque element qui boucle dans un tableau stars.) a la place de {star} de fonction CelebrityCard
+
 export default EveryStarsPage

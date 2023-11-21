@@ -12,3 +12,8 @@ function CelebrityCard ({star}){
     )
 }
 export default CelebrityCard
+
+// j'ai cree ici mon fonction pour creer un composant de CelebrtyCard. 
+// et je vais utiliser ce composant a la page d'accueil et page EveryStars.
+// j'ai cree un parametre qui s'appelle {star}
+// par props, donc par {star}, chaque composant parent va remplir cette props
