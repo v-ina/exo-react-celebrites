@@ -7,7 +7,7 @@ import CelebrityCard from '../components/CelebrityCard'
 function EveryStarsPage (){
     return(
         <>
-            <Header/>
+            <Header currentPage={"EveryStarsPage"}/>
             <main>
                 {stars.map(star=>{
                     return <CelebrityCard star={star}/>

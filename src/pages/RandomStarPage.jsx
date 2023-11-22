@@ -10,7 +10,7 @@ function RandomStarPage(){
     console.log((Math.random()*(stars.length-1)).toFixed(0));
     return(
         <>
-            <Header/>
+            <Header currentPage={"RandomStarPage"}/>
             <main>
                 {<CelebrityCard star={randomstar}/>}
             </main>

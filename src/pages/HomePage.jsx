@@ -16,7 +16,7 @@ function HomePage (){
 
     return(
         <>
-            <Header/>
+            <Header currentPage={"HomePage"}/>
             <main>
                 <h2>Latest 5 stars</h2>
                 {newest5Publishedstar.map(star=>{
