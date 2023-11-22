@@ -1,4 +1,7 @@
 import { useState } from "react";
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+
 
 function CopyrightPage(){
 
@@ -14,10 +17,41 @@ function CopyrightPage(){
     }
     console.log(displayText);
 
+    // const setDisplayText =() =>{
+    //     displayText = true
+    //     + bouton d'actualisation
+    // }
+    // oui c'est ca en gros.
+
+
+    const [number , setNumber] = useState(0)
+    const increaseNumber =()=>{
+        setNumber(number+1)
+    }
+
+
+    const [message, setMessage] = useState("")
+    const changevalue=(event)=>{
+        // const messageValue = event.target.value
+        // setMessage(messageValue)
+        // => en une ligne
+        setMessage(event.target.value)
+    }
+
     return(
         <>
-            <button onClick={cacherLeTexte}>Cacher le texte</button>
-            {displayText && <p>blablalbal</p>}
+            <Header />
+            <button onClick={cacherLeTexte}>button</button>
+            {displayText && <p>blalbalbla</p>}
+
+            <button onClick={increaseNumber}>increase</button>
+            <p>{number}</p>
+
+            <form action="">
+                <input type="text" onChange={changevalue}/>
+                <p>change here : {message}</p>
+            </form>
+            <Footer />
         </>
     )
 }
