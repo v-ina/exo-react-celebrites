@@ -3,6 +3,7 @@ import HomePage from "./pages/HomePage";
 import EveryStarsPage from "./pages/EveryStarsPage";
 import StarsDetailPage from "./pages/StarsDetailPage";
 import RandomStarPage from "./pages/RandomStarPage";
+import SpeakersPage from "./pages/SpeakersPage";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Route path="/stars" element={<EveryStarsPage />}/>
         <Route path="/stars/:starID/detail" element={<StarsDetailPage />}/>
         <Route path="/random" element={<RandomStarPage />}/>
+        <Route path="/speakers" element={<SpeakersPage />} />
       </Routes>
     </BrowserRouter>
   );

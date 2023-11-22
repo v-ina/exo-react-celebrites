@@ -22,6 +22,9 @@ function Header ({currentPage}){
                 ):(
                     <li><Link to='/random'>random stars</Link></li>
                 )}
+                <li>
+                    <Link to='speakers'>Speakers</Link>
+                </li>
             </ul>
         </nav>
     )
