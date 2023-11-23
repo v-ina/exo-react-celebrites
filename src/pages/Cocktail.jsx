@@ -15,10 +15,17 @@ function Cocktail(){
             return response.json()
         })
         .then((json)=>{   // les donnees transformees
-            setCocktails(json)
+            setCocktails(json.drinks)
+            // pareil, on a envie d'avoir un vrai objet, au lieu de json. et le stocker dans notre variable
+            // on stock le resultat de 'json.drinks' à variable 'cocktails'
         })
+        .catch(()=>{
+            // en cas d'erreur
+        })
+        
     }
-
+    
+    console.log(cocktails);
     // cette fonction 'setCocktails()' nous permet à stocker à 'cocktails' une nouvelle valeur
     // donc, pour stocker le valeur json, ce qu'on a recuperé par API, on appele fonction 'setCocktails()'
     // fonction 'setCocktails()' rechere le composant. donc fetch commence depuis le zero
@@ -30,7 +37,19 @@ function Cocktail(){
             <Header />
             <main>
                 {cocktails? (
-                    <p>cocktails pretes</p>
+                    <>
+                        {cocktails.map((cocktail,ind)=>{
+                            return (
+                                // nos variable 'cocktails' est un tableau, on peut le faire boucler.
+                                // avec map, on creer les nouveaux articles
+                                <article>
+                                    <p>{ind +1}</p>
+                                    <p>category : {cocktail.strCategory}</p>
+                                    <p>nom de cocktail : {cocktail.strDrink}</p>
+                                </article>
+                            )
+                        })}
+                    </>
                 ):(
                     <p>cocktails en cours de chargement</p>
                 )}
