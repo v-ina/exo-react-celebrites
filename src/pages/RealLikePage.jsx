@@ -56,6 +56,7 @@ function RealLikePage(){
                 <button onClick={clickHandle} disabled={displayMessage ? true : false}>Like</button>
                 <p>liked : {likeCount} fois</p>
                 {/* <p>{message}</p> */}
+
             </main>
             <Footer />
         </>
