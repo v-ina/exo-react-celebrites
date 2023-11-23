@@ -34,6 +34,9 @@ function Header ({currentPage}){
                 <li>
                     <Link to='/like'>LikePage</Link>
                 </li>
+                <li>
+                    <Link to='/reallike'>RealLikePage</Link>
+                </li>
             </ul>
         </nav>
     )

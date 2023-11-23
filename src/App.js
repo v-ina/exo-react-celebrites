@@ -7,6 +7,7 @@ import SpeakersPage from "./pages/SpeakersPage";
 import CopyrightPage from "./pages/CopyrightPage";
 import CopyrightPage2 from "./pages/Copyright2Page";
 import LikePage from "./pages/LikePage";
+import RealLikePage from "./pages/RealLikePage";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/copyright1" element={<CopyrightPage />} />
         <Route path="/copyright2" element={<CopyrightPage2 />} />
         <Route path="/like" element={<LikePage />} />
+        <Route path="/reallike" element={<RealLikePage />} />
       </Routes>
     </BrowserRouter>
   );
