@@ -31,6 +31,9 @@ function Header ({currentPage}){
                 <li>
                     <Link to='/copyright2'>copyright2 - useState2</Link>
                 </li>
+                <li>
+                    <Link to='/like'>LikePage</Link>
+                </li>
             </ul>
         </nav>
     )

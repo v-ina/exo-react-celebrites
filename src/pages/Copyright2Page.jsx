@@ -23,6 +23,14 @@ function CopyrightPage2(){
         setRangeAtInput(event.target.value)
     }
 
+    const [likenumber, setLikeNumber] = useState(0)
+    const clickButton=()=>{
+        setLikeNumber(likenumber +1)
+    }
+
+    // 3. je stocke valeur de likenumber avec useState, likenumber a '0' pour le valeur par defaut
+    // 4. fonction clickButton, j'appelle une fonction setLikeNumber. cette fonction 1)stock valeur a variable 'likenumber' et il recherge le composant
+    // 5. chaque click, on va stocker le valeur (likenumber +1) pour qu'il soit augementer 1 par click. 
 
     return(
         <>
@@ -45,6 +53,11 @@ function CopyrightPage2(){
                     <p>{rangeAtInput}</p>
                 </form>
 
+                <button onClick={clickButton}>button</button>
+                <p>like {likenumber} fois</p>
+                    {/* 1. j'ai creé un bouton et lui donné onClick function */}
+                    {/* 2. j'ai creé balise P, et je vais utiliser mon variable {likenumber} */}
+                    
             </main>
             <Footer />
         </>

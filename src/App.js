@@ -6,6 +6,7 @@ import RandomStarPage from "./pages/RandomStarPage";
 import SpeakersPage from "./pages/SpeakersPage";
 import CopyrightPage from "./pages/CopyrightPage";
 import CopyrightPage2 from "./pages/Copyright2Page";
+import LikePage from "./pages/LikePage";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/speakers" element={<SpeakersPage />} />
         <Route path="/copyright1" element={<CopyrightPage />} />
         <Route path="/copyright2" element={<CopyrightPage2 />} />
+        <Route path="/like" element={<LikePage />} />
       </Routes>
     </BrowserRouter>
   );

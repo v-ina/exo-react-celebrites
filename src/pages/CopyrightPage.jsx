@@ -26,7 +26,10 @@ function CopyrightPage(){
 
     const [number , setNumber] = useState(0)
     const increaseNumber =()=>{
-        setNumber(number+1)
+        if (number <10){
+
+            setNumber(number+1)
+        }
     }
 
 
